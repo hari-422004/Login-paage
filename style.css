@@ -1,0 +1,96 @@
+body {
+    background-color: #05c46b;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering Form with Better Aesthetics */
+form {
+    background-color: #fff;
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 30px 25px;
+    border-radius: 8px;
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+form:hover {
+    transform: scale(1.02);
+}
+
+/* Styling form-control Class */
+.form-control {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Styling form-control Label */
+.form-control label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling input fields */
+.form-control input,
+.form-control select,
+.form-control textarea {
+    border: 1px solid #777;
+    border-radius: 5px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-control input:focus {
+    border-color: #05c46b;
+    outline: none;
+    box-shadow: 0 0 8px rgba(5, 196, 107, 0.5);
+}
+
+/* Styling Radio and Checkbox */
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Styling Button */
+button {
+    background-color: #05c46b;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 18px;
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #04a45f;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+}
